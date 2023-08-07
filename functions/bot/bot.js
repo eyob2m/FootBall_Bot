@@ -1,17 +1,15 @@
-
-const puppeteer = require('puppeteer');
 const telegraf =  require('telegraf')
 
 module.exports = bot = new  telegraf('6468224337:AAGrt8G8xYxWtKND6yx5PvtGZgvDP1xKRCU')
 
-const Start =  require('./start')
+import Start from require('./start')
 Start()
-const About = require('./about')
+import About from ('./about')
 About()
-const Table  = require('./tables')
+import Table  from ('./tables')
 Table()
-const Live = require('./live')
+import Live from ('./live')
 Live()
-const Btns = require('./buttons')
+import Btns  from ('./buttons')
 Btns()
 bot.launch()
