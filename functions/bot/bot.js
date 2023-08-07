@@ -1,15 +1,17 @@
+
+require('dotenv').config()
+
 const telegraf =  require('telegraf')
+module.exports = bot = new  telegraf(process.env.API)
 
-module.exports = bot = new  telegraf('6468224337:AAGrt8G8xYxWtKND6yx5PvtGZgvDP1xKRCU')
-
-import Start from require('./start')
+const Start =  require('./start')
 Start()
-import About from ('./about')
+const About = require('./about')
 About()
-import Table  from ('./tables')
+const Table  = require('./tables')
 Table()
-import Live from ('./live')
+const Live = require('./live')
 Live()
-import Btns  from ('./buttons')
+const Btns = require('./buttons')
 Btns()
 bot.launch()

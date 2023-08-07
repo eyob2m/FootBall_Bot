@@ -1,4 +1,4 @@
-const bot = require('.')
+const bot = require('./bot')
 
 module.exports = Live = () => {
     let valid = []

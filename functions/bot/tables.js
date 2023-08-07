@@ -1,4 +1,4 @@
-const bot = require('.')
+const bot = require('./bot')
 const run = require('./api')
 module.exports = Table = () => {
    
