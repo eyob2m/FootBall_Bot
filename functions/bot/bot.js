@@ -1,7 +1,8 @@
 
 require('dotenv').config()
-
+const puppeteer = require('puppeteer');
 const telegraf =  require('telegraf')
+
 module.exports = bot = new  telegraf(process.env.API)
 
 const Start =  require('./start')
