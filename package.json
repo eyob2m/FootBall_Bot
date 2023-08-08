@@ -4,13 +4,14 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot"
+    "build": "npm install",
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.1",
+ 
     "puppeteer": "^21.0.1",
     "telegraf": "3.32"
   }
